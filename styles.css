@@ -1,26 +1,26 @@
 /* ===== CSS Variables ===== */
 :root {
-  --bg-primary: #0a0a0f;
-  --bg-secondary: #12121a;
-  --bg-card: #1a1a24;
-  --bg-card-hover: #22222e;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f8fc;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f0f5fa;
 
-  --text-primary: #e4e4e7;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
+  --text-primary: #0b3d91;
+  --text-secondary: #2a5a9e;
+  --text-muted: #5a7ab0;
 
-  --accent: #64ffda;
-  --accent-dim: rgba(100, 255, 218, 0.1);
-  --accent-hover: #4fd1b0;
+  --accent: #1565c0;
+  --accent-dim: rgba(21, 101, 192, 0.08);
+  --accent-hover: #0d47a1;
 
-  --border: #2a2a36;
+  --border: #d0dceb;
   --nav-height: 70px;
 
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
   --transition: 0.25s ease;
-  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow: 0 4px 24px rgba(11, 61, 145, 0.08);
 }
 
 /* ===== Reset & Base ===== */
@@ -107,7 +107,7 @@ ul {
   left: 0;
   right: 0;
   height: var(--nav-height);
-  background-color: rgba(10, 10, 15, 0.85);
+  background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -342,15 +342,13 @@ ul {
 }
 
 .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
   border-radius: 4px;
-  filter: grayscale(100%);
-  transition: filter var(--transition);
   position: relative;
   z-index: 1;
-}
-
-.image-wrapper:hover img {
-  filter: grayscale(0%);
 }
 
 /* ===== Timeline (Education & Experience) ===== */
@@ -460,7 +458,7 @@ ul {
   background-color: var(--accent-dim);
   color: var(--accent);
   border-radius: 4px;
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  border: 1px solid rgba(21, 101, 192, 0.2);
 }
 
 /* ===== Projects ===== */
